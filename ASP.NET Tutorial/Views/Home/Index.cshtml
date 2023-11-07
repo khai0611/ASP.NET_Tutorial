@@ -1,0 +1,23 @@
+﻿@{
+    Layout = null;
+}
+@model ASP.NET_Tutorial.Models.MessageModel
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        Welcome to ASP.NET MVC
+        <br />
+        @ViewBag.WelcomeString
+        @* pass directly from Controller to View through ViewBag Obj *@
+        <br />
+        @Model.Welcome
+        @* Print output *@
+    </div>
+</body>
+</html>
